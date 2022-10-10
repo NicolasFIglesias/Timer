@@ -110,9 +110,11 @@ aside {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
   }
 
-  .relogio div {
+   .relogio div {
     padding: 10px;
     margin-bottom: 5px;
+    height: 140px;
+    width: 120px;
   }
 
 
