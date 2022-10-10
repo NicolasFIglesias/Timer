@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+:root {
+  
+  --standard-color: linear-gradient(130deg, #b51515, #100f0f);
+  --primary-color: linear-gradient(130deg, #a03ad0, #091182);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    background: var(--standard-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+    
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo {
+    font-size: 10px;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  right:0;
+  display: flex;
+}
+
+.button {
+  margin-top: 20px;
+  margin-right: 15px;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 2.5px 0 #39a2db59;
+  cursor: pointer;
+  background: white;
+}
+
+.ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000000;
+  transition: left 1s;
+}
+
+.ball-move {
+  left: calc(100% - 40px);
+}
+
+.dark {
+  background: var(--primary-color);
+}
+
+
+
+
+
+/*------Media Query------*/
+
+@media (max-width: 600px) {
+  .relogio {
+    height: 220px;
+    width: 170px;
+    flex-direction: column;
+    padding: 100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+  }
+
+  .relogio div {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+
+}
