@@ -103,7 +103,7 @@ aside {
 
 @media (max-width: 600px) {
   .relogio {
-    height: 220px;
+    height: 250px;
     width: 170px;
     flex-direction: column;
     padding: 100px;
