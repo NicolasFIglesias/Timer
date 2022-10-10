@@ -73,7 +73,7 @@ aside {
   border-radius: 25px;
   box-shadow: 0 0 2.5px 0 #39a2db59;
   cursor: pointer;
-  background: white;
+  background: rgb(195, 194, 194, 0.3);
 }
 
 .ball {
